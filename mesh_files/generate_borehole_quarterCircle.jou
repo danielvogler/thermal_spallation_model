@@ -1,0 +1,26 @@
+new
+
+create surface rectangle width 0.5 height 0.5 zplane 
+create surface rectangle width 0.05 height 0.2 zplane 
+create surface circle radius 0.05 zplane
+
+move Surface 1  location 0.25 0.25 0.0 include_merged 
+move Surface 2  location 0.025 0.4 0.0 include_merged
+move Surface 3  location 0.0 0.3 0.0 include_merged
+
+unite surface 2 3
+subtract surface 4 from surface 1 
+
+
+sideset 1 add curve 14 
+sideset 2 add curve 13
+sideset 3 add curve 12 
+sideset 4 add curve 15 
+sideset 5 add curve 4
+sideset 6 add curve 3
+
+surface 5 size 0.003
+mesh surface 5
+
+export mesh "/home/davogler/projects/moose_projects/example_input_moose/meshes/borehole_round_forAdaption.e" overwrite 
+
