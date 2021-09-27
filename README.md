@@ -1,8 +1,11 @@
 # Thermal Spallation Model
-Thermal spallation modeling with [MOOSE](www.github.com/idaholab/moose)
+Thermal spallation modeling with [MOOSE](www.github.com/idaholab/moose). 
+
+### Last updates: 
+The model updated to work proberly using the MOOSE version updated on 24.09.2021. 
 
 ### Pre-requests:
-This model requires the following to physical models to be activated. 
+The following two physical models must be activated. 
 1. [Heat Conduction Module](https://mooseframework.inl.gov/modules/heat_conduction/index.html).
 2. [Tensor Mechanics Module](https://mooseframework.inl.gov/modules/tensor_mechanics/index.html). 
  
