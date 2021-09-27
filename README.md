@@ -1,6 +1,12 @@
 # Thermal Spallation Model
 Thermal spallation modeling with [MOOSE](www.github.com/idaholab/moose)
 
+### Pre-requests:
+This model requires the following to physical models to be activated. 
+1. [Heat Conduction Module](https://mooseframework.inl.gov/modules/heat_conduction/index.html).
+2. [Tensor Mechanics Module](https://mooseframework.inl.gov/modules/tensor_mechanics/index.html). 
+ 
+
 ### Files
 - simulation files: input files for [MOOSE simulator](www.github.com/idaholab/moose). Investigated are maximum jet flame temperature, solid structure type and heating rate impact.
 - input files:
