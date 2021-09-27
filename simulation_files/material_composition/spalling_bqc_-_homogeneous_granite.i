@@ -384,14 +384,16 @@ WA_e_z = 1.0e-8
 [BCs]
   ### MECH - DIRICHLET
   [./disp_x_on_y_axis]
-    type = DirichletBC preset=true
+    type = DirichletBC
+    preset=true
     boundary = '1'
     variable = disp_x
     value = 0
     use_displaced_mesh = false
   [../]
   [./disp_y_bottom]
-    type = DirichletBC preset=true
+    type = DirichletBC
+    preset=true
     boundary = '6'
     variable = disp_y
     value = 0
@@ -455,7 +457,8 @@ WA_e_z = 1.0e-8
   #   use_displaced_mesh = false
   # [../]
   [./T_bottom_dirichlet]
-    type = DirichletBC preset=true
+    type = DirichletBC
+    preset=true
     boundary = '4 5 6'
     variable = T
     value = ${tempInitialVal}
